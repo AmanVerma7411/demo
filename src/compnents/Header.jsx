@@ -45,24 +45,25 @@ export default function Header() {
       </div>
 
 
-      <div
-        className={`absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center py-4 md:hidden transition-all duration-300 ${
-          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"
-        }`}
-      >
-        <a href="#products" className="py-2 text-gray-700 hover:text-blue-600">
-          PRODUCTS
-        </a>
-        <a href="#features" className="py-2 text-gray-700 hover:text-blue-600">
-          FEATURES
-        </a>
-        <a href="#support" className="py-2 text-gray-700 hover:text-blue-600">
-          SUPPORT
-        </a>
-        <button className="mt-2 px-6 py-2 rounded-full text-white font-semibold bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 transition">
-          LOGIN
-        </button>
-      </div>
+    <div
+  className={`fixed top-[64px] left-0 w-full bg-white shadow-md flex flex-col items-center py-4 md:hidden transition-all duration-300 z-50 ${
+    isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
+  }`}
+>
+  <a href="#products" className="py-2 text-gray-700 hover:text-blue-600">
+    PRODUCTS
+  </a>
+  <a href="#features" className="py-2 text-gray-700 hover:text-blue-600">
+    FEATURES
+  </a>
+  <a href="#support" className="py-2 text-gray-700 hover:text-blue-600">
+    SUPPORT
+  </a>
+  <button className="mt-2 px-6 py-2 rounded-full text-white font-semibold bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 transition">
+    LOGIN
+  </button>
+</div>
     </nav>
   );
 }
+
