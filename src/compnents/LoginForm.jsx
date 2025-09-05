@@ -24,10 +24,10 @@ export default function LoginForm() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
       <div className="bg-white shadow-lg rounded-xl p-6 w-full max-w-sm">
-        {/* Logo */}
+    
         <img src={logo} alt="logo" className="h-12 mx-auto mb-4" />
 
-        {/* Error box */}
+       
         {errors.length > 0 && (
           <div className="bg-red-100 text-red-700 text-sm rounded-md p-3 mb-4 relative">
             <ul className="list-disc pl-5 space-y-1">
@@ -44,7 +44,7 @@ export default function LoginForm() {
           </div>
         )}
 
-        {/* Login Form */}
+   
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -80,7 +80,7 @@ export default function LoginForm() {
           </button>
         </form>
 
-        {/* Link to Register */}
+      
         <p className="text-sm text-gray-600 text-center mt-4">
           Don’t have an account?{" "}
           <a href="/register" className="text-purple-600 font-semibold">
@@ -91,3 +91,4 @@ export default function LoginForm() {
     </div>
   );
 }
+
