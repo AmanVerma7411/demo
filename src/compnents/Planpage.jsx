@@ -25,7 +25,7 @@ export default function Planpage() {
 
   return (
     <section className="bg-black text-white min-h-screen flex flex-col justify-center items-center px-6">
-      {/* Heading */}
+
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-extrabold">
           Which plan is right for you?
@@ -35,19 +35,18 @@ export default function Planpage() {
         </p>
       </div>
 
-      {/* Plans */}
+    
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
         {plans.map((plan, index) => (
           <div
             key={index}
             className="group relative rounded-lg p-[2px] bg-transparent"
           >
-            {/* Gradient border */}
+   
             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-100 transition duration-300"></div>
 
-            {/* Inner Card */}
             <div className="relative bg-zinc-900 rounded-lg flex flex-col h-full min-h-[450px]">
-              {/* Header */}
+
               <div
                 className={`${plan.color} p-6 flex items-center gap-3 rounded-t-lg`}
               >
@@ -58,7 +57,7 @@ export default function Planpage() {
                 </div>
               </div>
 
-              {/* Features */}
+
               <div className="p-8 flex-1">
                 <h4 className="font-semibold mb-3 text-gray-300 text-lg">
                   Featured Included:
@@ -69,7 +68,6 @@ export default function Planpage() {
                 </ul>
               </div>
 
-              {/* Button */}
               <div className="p-6">
                 <button className="w-full py-3 bg-white text-black rounded-md font-semibold hover:bg-gray-200 transition text-lg">
                   {plan.button}
@@ -82,3 +80,4 @@ export default function Planpage() {
     </section>
   );
 }
+
